@@ -57,3 +57,54 @@ li {
 li:hover {
   background: #b5ff7d;
 }
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 90%;
+  outline: none;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+.editButton,
+.removeButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 0.7rem;
+}
+
+.editButton:hover,
+.removeButton:hover {
+  opacity: 0.8;
+  animation: bounce 1s;
+}
+
+img {
+  max-width: 1.3rem;
+  max-height: 1.3rem;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
